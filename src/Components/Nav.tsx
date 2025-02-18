@@ -1,19 +1,14 @@
 import { NavLink } from "react-router";
-
-const Nav = ({ pages }) => {
-  console.log("Pages:", pages); // Debugging log
-
+const Nav = () => {
   return (
-    <div className="flex justify-center p-6 bg-[color.primary] sticky top-0">
+    <div className="flex justify-center p-8 bg-[#00ADB5] text-[#fff] text-xm sticky top-0">
       <p className="flex flex-1 text-2xl justify-center">VR.</p>
       <nav className="flex flex-3 justify-center gap-[5%]">
-        {pages && pages.map((page) => (
-          <NavLink key={page.page_url} to={page.page_url}>
-            {page.name}
-          </NavLink>
-        ))}
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/about-us">About</NavLink>
+        <NavLink to="/services">Services</NavLink>
+        <NavLink to="/contact-us">Contact</NavLink>
       </nav>
-      <button className="flex flex-1 justify-center">Get Started</button>
     </div>
   );
 };

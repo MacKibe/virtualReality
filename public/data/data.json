@@ -1,72 +1,78 @@
-[
-  {
-    "font": {
-      "h1": "",
-      "h2": "",
-      "h3": "",
-      "p": ""
-    }
-  },
-  {
-    "color": {
-      "primary": "#00ADB5",
-      "secondary": "#A100F2",
-      "background": "#181818",
-      "text": "#F0F0F0"
-    }
-  },
-  {
-    "pages": [
-      {
-        "name": "home",
-        "page_url": "/"
-      },
-      {
-        "name": "About Us",
-        "page_url": "/about-us"
-      },
-      {
-        "name": "Services",
-        "page_url": "/services"
-      },
-      {
-        "name": "Contact Us",
-        "page_url": "/contact-us"
+{
+  "data": [
+    {
+      "color": {
+        "primary": "#00ADB5",
+        "secondary": "#A100F2",
+        "background": "#181818",
+        "text": "#F0F0F0"
       }
-    ]
-  },
-  {
-    "services": [
-      {
-        "id": "1",
-        "service": "Web Development",
-        "page_link": "web-development",
-        "image_url": "./assets/web.jpg"
-      },
-      {
-        "id": "2",
-        "service": "Search Engine Optimization",
-        "page_link": "search-engine-optimization",
-        "image_url": "./assets/web.jpg"
-      },
-      {
-        "id": "3",
-        "service": "Content Marketing",
-        "page_link": "content-marketing",
-        "image_url": "./assets/web.jpg"
-      },
-      {
-        "id": "4",
-        "service": "Pay Per Click Advertising",
-        "page_link": "pay-per-click-advertising",
-        "image_url": "./assets/web.jpg"
-      },
-      {
-        "id": "5",
-        "service": "Graphic Design",
-        "page_link": "graphic-design",
-        "image_url": "./assets/web.jpg"
-      }
-    ]
-  }
-]
+    },
+    {
+      "pages": [
+        {
+          "name": "home",
+          "page_url": "/"
+        },
+        {
+          "name": "About Us",
+          "page_url": "/about-us"
+        },
+        {
+          "name": "Services",
+          "page_url": "/services"
+        },
+        {
+          "name": "Contact Us",
+          "page_url": "/contact-us"
+        }
+      ]
+    },
+    {
+      "services": [
+        {
+          "id": "1",
+          "service": "Web Development",
+          "page_link": "web-development",
+          "image_url": "./assets/web.jpg"
+        },
+        {
+          "id": "2",
+          "service": "Search Engine Optimization",
+          "page_link": "search-engine-optimization",
+          "image_url": "./assets/web.jpg"
+        },
+        {
+          "id": "3",
+          "service": "Content Marketing",
+          "page_link": "content-marketing",
+          "image_url": "./assets/web.jpg"
+        },
+        {
+          "id": "4",
+          "service": "Pay Per Click Advertising",
+          "page_link": "pay-per-click-advertising",
+          "image_url": "./assets/web.jpg"
+        },
+        {
+          "id": "5",
+          "service": "Graphic Design",
+          "page_link": "graphic-design",
+          "image_url": "./assets/web.jpg"
+        },
+        {
+          "id": "6",
+          "service": "Social Media Marketing",
+          "page_link": "social-media-marketing",
+          "image_url": "./assets/web.jpg"
+        },
+        {
+          "id": "7",
+          "service": "Email Marketing",
+          "page_link": "email-marketing",
+          "image_url": "./assets/web.jpg"
+        }
+      ]
+    }
+  ]
+}
