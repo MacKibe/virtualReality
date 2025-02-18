@@ -2,7 +2,7 @@ import { IoIosArrowDropright,IoIosArrowDroprightCircle } from "react-icons/io";
 import laptop from "../assets/marketing.jpg";
 const OurServices = () => {
   return (
-    <div id="services" className="py-8 font-serif bg-white">
+    <div id="services" className="py-8 bg-white">
       <div className="w-[75%] m-auto py-8">
         <h2 className="text-5xl text-[#00ADB5]">Our Services</h2>
         <p className="my-4">
