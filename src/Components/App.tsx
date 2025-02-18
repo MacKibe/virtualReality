@@ -8,10 +8,10 @@ import Footer from "./Footer";
 import ServicesPage from "../Pages/ServicesPage";
 
 
-const App: React.FC = () => {
+const App = () => {
   
   return (
-    <div className=" font-serif bg-[#F0F0F0] text-[#181818]">
+    <div className="text-xm font-serif bg-[#F0F0F0] text-[#181818]">
       {/* Header */}
       <Header />
       {/* Navbar */}

@@ -1,7 +1,7 @@
 const AboutUsPage = () => {
   return (
-    <div className=" py-8">
-      <div className="flex flex-col w-[75%] mx-auto justify-evenly h-[60dvh] gap-[5%]">
+    <div className="py-8">
+      <div className="flex flex-col w-[75%] mx-auto justify-evenly h-[70dvh] gap-[5%]">
         <div className="flex justify-between">
           <h3 className="flex items-center text-2xl">Mission</h3>
           <p className="w-[70%] text-4xl text-[#A100F2]">
@@ -20,7 +20,7 @@ const AboutUsPage = () => {
           </p>
         </div>
       </div>
-      <div className="p-16 w-[75%] mx-auto ">
+      <div className="p-16 w-[75%] mx-auto bg-white">
         <h2 className="text-[#A100F2] text-xl underline">About Us</h2>
         <p className="my-4 text-3xl"><b className="text-[#00ADB5]">Virtual Reality Marketing Agency</b> is
           a pioneering digital marketing agency that integrates immersive
@@ -31,7 +31,7 @@ const AboutUsPage = () => {
           <b className="text-[#00ADB5]">agriculture</b>,<b className="text-[#00ADB5]">fashion</b>, and <b className="text-[#00ADB5]">professional services</b>.
         </p>
       </div>
-      <div className="w-[75%] mx-auto">
+      <div className="p-4 w-[75%] mx-auto">
         <h3 className="text-4xl mb-6">Core Values</h3>
         <ul className="flex flex-wrap justify-evenly">
           <li className="w-[40%] border rounded-4xl p-12 bg-white mb-[5%]">

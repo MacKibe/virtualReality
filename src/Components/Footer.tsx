@@ -4,7 +4,7 @@ const Footer = () => {
     <div className="flex flex-col justify-between py-[1%] h-[50dvh] bg-[#fff] text-[#181818] text-xm">
       <div className="flex justify-evenly w-[85%] mx-auto pt-[2%]">
         <div className="w-[30%]">
-          <h2 className="text-[#A100F2] text-2xl">VR.</h2>
+          <h2 className="text-[#A100F2] text-2xl my-4">VR.</h2>
           <p>
             Virtual Reality Circle is a pioneering digital marketing agency that
             integrates immersive Virtual Reality (VR) experiences with
@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
 
         <div className="w-[20%]">
-          <h3 className="text-[#A100F2] text-2xl">Services</h3>
+          <h3 className="text-[#A100F2] text-2xl my-4">Services</h3>
           <ul>
             <li className="">
               <a href="">Web development</a>
@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-between w-[30%]">
           <div>
-            <h3 className="text-[#A100F2] text-2xl">Contact Information</h3>
+            <h3 className="text-[#A100F2] text-2xl my-4">Contact Information</h3>
             <ul>
               <li>
                 Phone: <b>+254 701069382</b>
@@ -52,7 +52,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-[#A100F2] text-2xl">Get in Touch.</h3>
+            <h3 className="text-[#A100F2] text-2xl my-4">Get in Touch.</h3>
             <ul className="flex gap-[7%]">
               <li>
                 <a href="">
