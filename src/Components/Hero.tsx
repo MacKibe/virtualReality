@@ -11,9 +11,9 @@ const Hero = () => {
           We create immersive virtual experience that push the boundaries of
           what's possible.
         </h3>
-        <button className="px-8 py-4 my-4 border-2 text-[#F0F0F0] bg-[#A100F2] rounded-xl">
+        <a className="px-8 py-4 my-4 border-2 text-[#F0F0F0] bg-[#A100F2] rounded-xl">
           Get Started
-        </button>
+        </a>
       </div>
       <div className="flex flex-1 justify-center items-center">
         <img src={marketing} alt="" className="w-[90%]" />
