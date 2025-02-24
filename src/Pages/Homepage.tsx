@@ -1,14 +1,14 @@
 import Hero from "../Components/Hero";
 import OurServices from "../Components/OurServices";
 import TheTeam from "../Components/TheTeam";
-const Homepage = () => {
+const Homepage = ({ services, profiles }) => {
   return (
     <div className="text-xl text-[#181818]">
       {/* Hero */}
       <Hero />
 
       {/* Our Services */}
-      <OurServices />
+      <OurServices services={services} />
 
       {/* Why Choose Us */}
       <div className="flex justify-center text-[#F0F0F0] ">
@@ -18,7 +18,7 @@ const Homepage = () => {
       </div>
 
       {/* Our Team */}
-      <TheTeam />
+      <TheTeam profiles={profiles} />
 
       {/* Contact Us / Call to Action */}
       <div className="flex justify-evenly py-12 bg-[#F0F0F0] bg-blend-ligten bg-[url('./assets/laptop.jpg')] bg-cover bg-center text-[#F0F0F0] text-xl">

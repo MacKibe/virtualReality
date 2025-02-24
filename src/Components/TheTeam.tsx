@@ -1,5 +1,4 @@
-import profileImg from "../assets/profile.jpg";
-const TheTeam = () => {
+const TheTeam = ({ profiles }) => {
   return (
     <div className="bg-white">
       <div className="w-[75%] bg-white m-auto py-8">
@@ -17,41 +16,15 @@ const TheTeam = () => {
           success
         </p>
         <ul className="flex flex-wrap gap-[5%]">
-          <li className="w-[30%] mb-[5%] bg-[#181818]">
-            <img src={profileImg} alt="" />
-            <div className="text-center p-4 text-[#00ADB5]">
-              <h5>Muli Palstau</h5>
-              <h4>Web Developer</h4>
-            </div>
-          </li>
-          <li className="w-[30%] mb-[5%] bg-[#181818]">
-            <img src={profileImg} alt="" />
-            <div className="text-center p-4 text-[#00ADB5]">
-              <h5>Muli Palstau</h5>
-              <h4>Web Developer</h4>
-            </div>
-          </li>
-          <li className="w-[30%] mb-[5%] bg-[#181818]">
-            <img src={profileImg} alt="" />
-            <div className="text-center p-4 text-[#00ADB5]">
-              <h5>Muli Palstau</h5>
-              <h4>Web Developer</h4>
-            </div>
-          </li>
-          <li className="w-[30%] mb-[5%] bg-[#181818]">
-            <img src={profileImg} alt="" />
-            <div className="text-center p-4 text-[#00ADB5]">
-              <h5>Muli Palstau</h5>
-              <h4>Web Developer</h4>
-            </div>
-          </li>
-          <li className="w-[30%] mb-[5%] bg-[#181818]">
-            <img src={profileImg} alt="" />
-            <div className="text-center p-4 text-[#00ADB5]">
-              <h5>Muli Palstau</h5>
-              <h4>Web Developer</h4>
-            </div>
-          </li>
+          {profiles.map((profile, index) => (
+            <li key={index} className="w-[30%] mb-[5%] bg-[#181818]">
+              <img src={profile.image_url} alt="" />
+              <div className="text-center p-4 text-[#00ADB5]">
+                <h5>{profile.name}</h5>
+                <h4>{profile.role}</h4>
+              </div>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

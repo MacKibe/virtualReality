@@ -1,6 +1,6 @@
-import { IoIosArrowDropright,IoIosArrowDroprightCircle } from "react-icons/io";
-import laptop from "../assets/marketing.jpg";
-const OurServices = () => {
+const OurServices = ({ services }) => {
+  console.log("Our Services Data Ourservices Component:", services);
+
   return (
     <div id="services" className="py-8 bg-white">
       <div className="w-[75%] m-auto py-8">
@@ -17,38 +17,21 @@ const OurServices = () => {
           Explore our services and let’s take your business to the next level!
         </p>
         <ul className="flex flex-wrap gap-[5%] text-[#00ADB5]">
-          <li className="border w-[calc(30%)] text-center my-2">
-            <img src={laptop} alt="" className="w-[]" />
-            <p className="flex justify-center gap-[5%] items-center py-[5%] bg-[#F0F0F0]">Web Development <IoIosArrowDropright size={30}/></p>
-          </li>
-          <li className="border w-[calc(30%)] text-center my-2">
-            <img src={laptop} alt="" className="w-[]" />
-            <p className=" flex justify-center gap-[5%] items-center py-[5%] bg-[#F0F0F0] text-[#00ADB5]">SEO<IoIosArrowDroprightCircle  size={30}/></p>
-          </li>
-          <li className="border w-[calc(30%)] text-center my-2">
-            <img src={laptop} alt="" className="w-[]" />
-            <p className="py-[5%] bg-[#F0F0F0] text-[#00ADB5] w-[70%] mx-auto text-wrap">Content Marketing</p>
-          </li>
-          <li className="border w-[calc(30%)] text-center my-2">
-            <img src={laptop} alt="" className="w-[]" />
-            <p className="py-[5%] bg-[#F0F0F0] text-[#00ADB5] w-[70%] mx-auto text-wrap">Social Media Marketing</p>
-          </li>
-          <li className="border w-[calc(30%)] text-center my-2">
-            <img src={laptop} alt="" className="w-[]" />
-            <p className="py-[5%] bg-[#F0F0F0] text-[#00ADB5] w-[70%] mx-auto text-wrap">Pay-Per-Click Adversting</p>
-          </li>
-          <li className="border w-[calc(30%)] text-center my-2">
-            <img src={laptop} alt="" className="w-[]" />
-            <p className="py-[5%] bg-[#F0F0F0] text-[#00ADB5] w-[70%] mx-auto text-wrap">Graphic Design</p>
-          </li>
-          <li className="border w-[calc(30%)] text-center my-2">
-            <img src={laptop} alt="" className="w-[]" />
-            <p className="py-[5%] bg-[#F0F0F0] text-[#00ADB5] w-[70%] mx-auto text-wrap">White Label Services</p>
-          </li>
-          <li className="border w-[calc(30%)] text-center my-2">
-            <img src={laptop} alt="" className="w-[]" />
-            <p className="py-[5%] bg-[#F0F0F0] text-[#00ADB5] w-[70%] mx-auto text-wrap">Video Production & Brand Storytelling</p>
-          </li>
+          {services.map((service, index) => (
+            <li
+              key={index}
+              className="border w-[calc(30%)] text-center my-2 bg-[#F0F0F0]"
+            >
+              <a href={`/services#${service.page_link}`}>
+                <img src={service.image_url} alt={service.service} />
+                <span className="flex items-center text-[#00ADB5]">
+                  <p className="py-[5%] w-[80%] mx-auto text-wrap">
+                    {service.service}
+                  </p>
+                </span>
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
