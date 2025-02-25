@@ -1,15 +1,8 @@
 @import "tailwindcss";
 
-/* 
-
-
-Primary (Teal Blue) → #00ADB5
-Accent (Electric Purple) → #A100F2
-Background (Dark Navy) → #181818
-Text (Soft White) → #F0F0F0 
-
-
-*/
-html {
-    scroll-behavior: smooth;
+:root {
+  --primary: #ff0000;
+  --secondary: #0023ff;
+  --background: #f0f0f0;
+  --text: #181818;
 }

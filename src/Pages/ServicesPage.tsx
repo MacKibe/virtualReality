@@ -3,7 +3,7 @@ const ServicesPage = ({ services }) => {
     <div className="py-8">
       <div className="w-[75%] mx-auto">
         <div>
-          <h2 className="text-5xl text-[#00ADB5]">Our Services</h2>
+          <h2 className="text-5xl text-[var(--primary)]">Our Services</h2>
           <p className="my-4">
             At Virtual Reality Marketing Agency, we specialize in cutting-edge
             digital marketing solutions designed to elevate your brand, increase
@@ -30,7 +30,7 @@ const ServicesPage = ({ services }) => {
                 <img src={service.image_url} alt={service.service} />
               </div>
               <div>
-                <h3 className="text-2xl text-[#A100F2] my-4">
+                <h3 className="text-2xl text-[var(--primary)] my-4">
                   {service.service}
                 </h3>
                 <p>{service.description}</p>

@@ -3,7 +3,7 @@ import OurServices from "../Components/OurServices";
 import TheTeam from "../Components/TheTeam";
 const Homepage = ({ services, profiles }) => {
   return (
-    <div className="text-xl text-[#181818]">
+    <div className="text-xl text-primary">
       {/* Hero */}
       <Hero />
 

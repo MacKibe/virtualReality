@@ -2,14 +2,14 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { MdEmail, MdLocalPhone } from "react-icons/md";
 const Header = () => {
   return (
-    <ul className="flex justify-end gap-[2%] items-center p-2 bg-[#F0F0F0] text-[#A100F2] font-bold">
+    <ul className="flex justify-end gap-[2%] text-[var(--primary)] items-center p-2 font-bold">
       <li className="flex items-center gap-2">
-        <MdLocalPhone color="#" size={25} />
+        <MdLocalPhone style={{ color: 'var(--secondary)' }} size={25} />
         +254 701069382
       </li>
       <li>|</li>
       <li className="flex items-center gap-2">
-        <MdEmail color="#" size={25} />
+        <MdEmail style={{ color: 'var(--secondary)' }} size={25} />
         virtualrealitycircle.ke@gmail.com
       </li>
       <li>|</li>

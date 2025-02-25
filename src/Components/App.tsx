@@ -27,17 +27,15 @@ const App = () => {
   if (error) return <div>Error loading data: {error.message}</div>;
   //
   // Services Data
-  const services = data?.[2]?.services;
+  const services = data?.[1]?.services;
   //
   // ProfileData
-  const profiles = data?.[4]?.profiles;
+  const profiles = data?.[3]?.profiles;
   //
   // CoreValuesData
-  const coreValues = data?.[3]?.corevalues;
-  // Color Data
-  // const color = data?.[1]?.pages;
+  const coreValues = data?.[2]?.corevalues;
   return (
-    <div className="text-xm font-serif bg-[#F0F0F0] text-[#181818]">
+    <div className="text-xm font-serif text-[var(--text)] bg-[var(--background)]">
       {/* Header */}
       <Header />
       {/* Navbar */}

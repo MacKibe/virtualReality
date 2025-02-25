@@ -1,7 +1,7 @@
 import { NavLink } from "react-router";
 const Nav = () => {
   return (
-    <div className="flex justify-center p-6 bg-[#00ADB5] text-[#fff] text-xm sticky top-0">
+    <div className="flex justify-center bg-[var(--primary)] text-[var(--background)] p-6 text-xm sticky top-0">
       <p className="flex flex-1 text-2xl justify-center">VR.</p>
       <nav className="flex flex-3 justify-center gap-[5%]">
         <NavLink to="/">Home</NavLink>

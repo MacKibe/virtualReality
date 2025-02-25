@@ -1,13 +1,5 @@
 [
   {
-    "color": {
-      "primary": "#00ADB5",
-      "secondary": "#A100F2",
-      "background": "#181818",
-      "text": "#F0F0F0"
-    }
-  },
-  {
     "pages": [
       {
         "name": "Home",
