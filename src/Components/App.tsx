@@ -35,7 +35,7 @@ const App = () => {
   // CoreValuesData
   const coreValues = data?.[2]?.corevalues;
   return (
-    <div className="text-xm font-serif text-[var(--text)] bg-[var(--background)]">
+    <div className="font-serif text-[var(--text)] bg-[var(--background)]">
       {/* Header */}
       <Header />
       {/* Navbar */}

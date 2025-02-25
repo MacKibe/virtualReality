@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { MdEmail, MdLocalPhone } from "react-icons/md";
 const Header = () => {
   return (
-    <ul className="flex justify-end gap-[2%] text-[var(--primary)] items-center p-2 font-bold">
+    <ul className="sm:hidden md:flex justify-end gap-[2%] text-[var(--primary)] items-center p-2 font-bold">
       <li className="flex items-center gap-2">
         <MdLocalPhone style={{ color: 'var(--secondary)' }} size={25} />
         +254 701069382
