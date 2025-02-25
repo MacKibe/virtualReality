@@ -3,7 +3,7 @@ import OurServices from "../Components/OurServices";
 import TheTeam from "../Components/TheTeam";
 const Homepage = ({ services, profiles }) => {
   return (
-    <div className="">
+    <div className="text-2xl">
       {/* Hero */}
       <Hero />
 
