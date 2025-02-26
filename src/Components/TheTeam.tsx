@@ -1,7 +1,7 @@
 const TheTeam = ({ profiles }) => {
   return (
     <div>
-      <div className="w-[75%] m-auto py-8">
+      <div className="px-[10%]">
         <h2 className="text-5xl text-[var(--primary)]">Meet The Team</h2>
         <p className="my-4">
           At Virtual Reality Circle, we believe that digital marketing is more
@@ -15,13 +15,13 @@ const TheTeam = ({ profiles }) => {
           into loyal customers. Meet the team shaping the future of digital
           success
         </p>
-        <ul className="flex flex-wrap gap-[5%]">
+        <ul className="flex flex-wrap justify-center gap-[5%]">
           {profiles.map((profile, index) => (
-            <li key={index} className="w-[20%] mb-[5%] bg-[var(--background)]">
+            <li key={index} className="md:w-[calc(20%)] w-[calc(70%)] mt-[4%] bg-[var(--background)] rounded-4xl">
               <img src={profile.image_url} alt="" />
               <div className="text-center p-4 text-[var(--primary)]">
-                <h5>{profile.name}</h5>
-                <h4>{profile.role}</h4>
+                <h5 className="text-[var(--text)]">{profile.name}</h5>
+                <h4 className="text-xl">{profile.role}</h4>
               </div>
             </li>
           ))}
