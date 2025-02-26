@@ -25,7 +25,7 @@
         "id": "1",
         "service": "Web Development",
         "page_link": "web-development",
-        "image_url":  "src/assets/marketing.jpg",
+        "image_url": "src/assets/marketing.jpg",
         "description": "Your website is your digital storefront—make it stand out! We design and develop fast, responsive, and user-friendly websites that reflect your brand, improve user experience, and convert visitors into loyal customers."
       },
       {
@@ -53,7 +53,8 @@
         "id": "5",
         "service": "Graphic Design",
         "page_link": "graphic-design",
-        "image_url": "src/assets/web.jpg"
+        "image_url": "src/assets/ppa.jpg",
+        "description": "Make your brand visually unforgettable! Our creative graphic design team crafts stunning visuals—logos, banners, infographics, and more—that align with your brand identity and captivate your audience. Whether it’s for your website, social media, or marketing campaigns, we deliver designs that leave a lasting impression and drive engagement."
       },
       {
         "id": "6",
