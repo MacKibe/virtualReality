@@ -1,14 +1,42 @@
-import AboutUsPage from "../Pages/AboutUsPage";
-import ContactPage from "../Pages/ContactPage";
-import Homepage from "../Pages/Homepage";
-import { Routes, Route } from "react-router";
+import { useQuery } from "@tanstack/react-query";
 import Header from "./Header";
 import Nav from "./Nav";
-import Footer from "./Footer";
+import { Route, Routes } from "react-router";
+import Homepage from "../Pages/Homepage";
+import AboutUsPage from "../Pages/AboutUsPage";
 import ServicesPage from "../Pages/ServicesPage";
-import { useQuery } from "@tanstack/react-query";
+import ContactPage from "../Pages/ContactPage";
+import Footer from "./Footer";
 
-const fetchData = async () => {
+// Define types for your data
+interface Service {
+  id: number;
+  service: string;
+  description: string;
+  image_url: string;
+  page_link: string;
+}
+
+interface Profile {
+  id: number;
+  name: string;
+  role: string;
+  image_url: string;
+}
+
+interface CoreValue {
+  id: number;
+  value: string;
+  description: string;
+}
+
+interface Data {
+  services: Service[];
+  profiles: Profile[];
+  corevalues: CoreValue[];
+}
+
+const fetchData = async (): Promise<Data[]> => {
   const response = await fetch("./data/data.json");
   if (!response.ok) {
     throw new Error("Failed to fetch data");
@@ -21,24 +49,17 @@ const App = () => {
     queryKey: ["data"],
     queryFn: fetchData,
   });
-  console.log("My data:", data);
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error loading data: {error.message}</div>;
-  //
-  // Services Data
-  const services = data?.[1]?.services;
-  //
-  // ProfileData
-  const profiles = data?.[3]?.profiles;
-  //
-  // CoreValuesData
-  const coreValues = data?.[2]?.corevalues;
+
+  const services = data?.[1]?.services || [];
+  const profiles = data?.[3]?.profiles || [];
+  const coreValues = data?.[2]?.corevalues || [];
+
   return (
     <div className="font-serif text-[var(--background)] bg-[var(--text)]">
-      {/* Header */}
       <Header />
-      {/* Navbar */}
       <Nav />
       <Routes>
         <Route
@@ -55,7 +76,6 @@ const App = () => {
         />
         <Route path="/contact-us" element={<ContactPage />} />
       </Routes>
-      {/* Footer */}
       <Footer />
     </div>
   );
