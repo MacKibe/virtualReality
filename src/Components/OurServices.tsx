@@ -1,10 +1,5 @@
-interface Service {
-  id: number;
-  service: string;
-  description: string;
-  image_url: string;
-  page_link: string;
-}
+// src/Components/OurServices.tsx
+import { Service } from "../types"; // Import the Service type
 
 interface OurServicesProps {
   services: Service[];
@@ -20,7 +15,7 @@ const OurServices = ({ services }: OurServicesProps) => {
           position it for success.
         </p>
         <ul className="flex flex-col md:flex-row md:flex-wrap gap-[5%] text-[var(--primary)]">
-          {services.map((service, index) => (
+          {services.map((service: Service, index: number) => (
             <li
               key={index}
               className="border md:w-[calc(30%)] text-center my-2 bg-[var(--text)]"

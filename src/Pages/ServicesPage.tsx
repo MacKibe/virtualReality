@@ -1,4 +1,11 @@
-const ServicesPage = ({ services }) => {
+// src/Pages/ServicesPage.tsx
+import { Service } from "../types"; // Import the Service type
+
+interface ServicesPageProps {
+  services: Service[];
+}
+
+const ServicesPage = ({ services }: ServicesPageProps) => {
   return (
     <div className="py-8">
       <div className="w-[75%] mx-auto">
@@ -7,20 +14,11 @@ const ServicesPage = ({ services }) => {
           <p className="my-4">
             At Virtual Reality Marketing Agency, we specialize in cutting-edge
             digital marketing solutions designed to elevate your brand, increase
-            engagement, and drive measurable results. Whether you’re looking to
-            boost your online presence, generate high-quality leads, or enhance
-            customer retention, our expert team is here to craft tailored
-            strategies that align with your business goals.
-          </p>
-          <p className="">
-            We blend creativity with data-driven insights to deliver campaigns
-            that truly make an impact. From SEO and social media marketing to
-            content creation and paid advertising, we leverage the latest
-            industry trends and technology to maximize your ROI.
+            engagement, and drive measurable results.
           </p>
         </div>
         <ol>
-          {services.map((service, index) => (
+          {services.map((service: Service, index: number) => (
             <li
               id={service.page_link}
               key={index}

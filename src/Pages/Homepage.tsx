@@ -1,6 +1,8 @@
+// src/Pages/Homepage.tsx
 import Hero from "../Components/Hero";
 import OurServices from "../Components/OurServices";
 import TheTeam from "../Components/TheTeam";
+import { Service, Profile } from "../types"; // Import types
 
 interface HomepageProps {
   services: Service[];
