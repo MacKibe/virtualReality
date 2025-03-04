@@ -8,11 +8,9 @@ const ContactPage = () => {
           </h2>
         </section>
         <section className="flex flex-col-reverse gap-[5%] md:flex-row">
-          <form
-            className="flex flex-1 flex-col text-[var(--secondary)]"
-          >
+          <form className="flex flex-1 flex-col text-[var(--secondary)]">
             <div className="p-[5%] md:p-2 text-3xl">Fill in the form</div>
-            <div>
+            <div className="">
               <input
                 className="border-2 rounded-xl m-2 p-4"
                 type="text"
@@ -36,25 +34,25 @@ const ContactPage = () => {
                 placeholder="Phone Number"
               />
             </div>
-            <div className="">
-              <input
-                className="border-2 rounded-xl m-2 p-4"
-                type="text"
-                placeholder="Email"
-              />
-            </div>
+            <input
+              className="border-2 rounded-xl m-2 p-4"
+              type="text"
+              placeholder="Email"
+            />
             <textarea
               className="border-2 rounded-xl m-2 p-4"
               name=""
               id=""
               placeholder="Enter Message"
             ></textarea>
-            <button className="bg-[var(--secondary)] text-[var(--text)] rounded-3xl p-[5%] m-2">Send</button>
+            <button className="bg-[var(--secondary)] text-[var(--text)] rounded-3xl p-[5%] m-2">
+              Send
+            </button>
           </form>
           <div className="flex flex-col gap-[5%] flex-1 px-[5%]">
             <div className="flex flex-col md:flex-row text-2xl md:text-sm justify-between">
               <div>
-                <h3 className="text-xl text-[var(--primary)]" >Our Address</h3>
+                <h3 className="text-xl text-[var(--primary)]">Our Address</h3>
                 <ul className="ml-2">
                   <li>Virtual Reality Marketing Agency</li>
                   <li>PO BOX 4517-09001</li>
@@ -62,11 +60,15 @@ const ContactPage = () => {
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl text-[var(--primary)]">Contact Information</h3>
+                <h3 className="text-xl text-[var(--primary)]">
+                  Contact Information
+                </h3>
                 <ul className="ml-2">
                   <li>Phone: 0701069382</li>
                   <li>Email : info@vr.com</li>
-                  <li><a href="#">LinkedIn</a></li>
+                  <li>
+                    <a href="#">LinkedIn</a>
+                  </li>
                 </ul>
               </div>
             </div>
