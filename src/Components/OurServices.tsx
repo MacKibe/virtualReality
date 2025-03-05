@@ -1,11 +1,9 @@
-// src/Components/OurServices.tsx
-import { Service } from "../types"; // Import the Service type
+import { Service } from "../types";
 
 interface OurServicesProps {
   services: Service[];
 }
-
-const OurServices = ({ services }: OurServicesProps) => {
+const OurServices: React.FC<OurServicesProps> = ({ services }) => {
   return (
     <div id="services">
       <div className="px-[10%]">
@@ -15,7 +13,7 @@ const OurServices = ({ services }: OurServicesProps) => {
           position it for success.
         </p>
         <ul className="flex flex-col md:flex-row md:flex-wrap gap-[5%] text-[var(--primary)]">
-          {services.map((service: Service, index: number) => (
+          {services.map((service, index) => (
             <li
               key={index}
               className="border md:w-[calc(30%)] text-center my-2 bg-[var(--text)]"

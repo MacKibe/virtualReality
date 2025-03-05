@@ -1,15 +1,9 @@
-interface Profile {
-  id: number;
-  name: string;
-  role: string;
-  image_url: string;
-}
+import { Profile } from "../types";
 
-interface TheTeamProps {
+interface TeamProps {
   profiles: Profile[];
 }
-
-const TheTeam = ({ profiles }: TheTeamProps) => {
+const TheTeam: React.FC<TeamProps> = ({ profiles }) => {
   return (
     <div>
       <div className="px-[10%]">
@@ -19,7 +13,7 @@ const TheTeam = ({ profiles }: TheTeamProps) => {
           than just algorithms and analytics.
         </p>
         <ul className="flex flex-wrap justify-center gap-[5%]">
-          {profiles.map((profile, index) => (
+          {profiles.map((profile: Profile, index: number) => (
             <li
               key={index}
               className="md:w-[calc(20%)] w-[calc(70%)] mt-[4%] bg-[var(--background)] rounded-4xl"

@@ -1,11 +1,10 @@
-// src/Pages/ServicesPage.tsx
-import { Service } from "../types"; // Import the Service type
+import { Service } from "../types";
 
 interface ServicesPageProps {
   services: Service[];
 }
 
-const ServicesPage = ({ services }: ServicesPageProps) => {
+const ServicesPage: React.FC<ServicesPageProps> = ({ services }) => {
   return (
     <div className="py-8">
       <div className="w-[75%] mx-auto">

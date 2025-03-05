@@ -2,14 +2,14 @@
 import Hero from "../Components/Hero";
 import OurServices from "../Components/OurServices";
 import TheTeam from "../Components/TheTeam";
-import { Service, Profile } from "../types"; // Import types
+import { Service, Profile } from "../types";
 
 interface HomepageProps {
   services: Service[];
   profiles: Profile[];
 }
 
-const Homepage = ({ services, profiles }: HomepageProps) => {
+const Homepage: React.FC<HomepageProps> = ({ services, profiles }) => {
   return (
     <div className="text-2xl">
       <Hero />

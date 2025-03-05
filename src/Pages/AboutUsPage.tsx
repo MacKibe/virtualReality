@@ -1,14 +1,10 @@
-interface CoreValue {
-  id: number;
-  value: string;
-  description: string;
-}
-
-interface AboutUsPageProps {
+import { CoreValue } from "../types";
+// Define props for the AboutUsPage component
+interface AboutPageProps {
   coreValues: CoreValue[];
 }
 
-const AboutUsPage = ({ coreValues }: AboutUsPageProps) => {
+const AboutUsPage: React.FC<AboutPageProps> = ({ coreValues }) => {
   return (
     <div className="py-8">
       <div className="flex flex-col px-[15%] md:px-[25%] py-[5%] justify-evenly gap-[5%]">
@@ -31,14 +27,16 @@ const AboutUsPage = ({ coreValues }: AboutUsPageProps) => {
       <div className="p-8 w-[75%] mx-auto bg-white">
         <h2 className="text-[var(--primary)] text-3xl underline">About Us</h2>
         <p className="my-4">
-          <b className="text-[var(--primary)]">Virtual Reality Marketing Agency</b> is
-          a pioneering digital marketing agency.
+          <b className="text-[var(--primary)]">
+            Virtual Reality Marketing Agency
+          </b>{" "}
+          is a pioneering digital marketing agency.
         </p>
       </div>
       <div className="py-4 px-[15%] mx-auto">
         <h3 className="text-3xl mb-6 text-[var(--primary)]">Core Values</h3>
         <ul className="flex flex-col md:flex-row flex-wrap justify-evenly">
-          {coreValues.map((coreValue, index) => (
+          {coreValues.map((coreValue: CoreValue, index: number) => (
             <li
               key={index}
               className="md:w-[40%] border rounded-4xl p-12 bg-white mb-[5%]"

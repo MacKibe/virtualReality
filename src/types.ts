@@ -1,27 +1,24 @@
-// src/types.ts
-export interface Service {
-  id: number;
-  service: string;
-  description: string;
-  image_url: string;
-  page_link: string;
-}
+export type Page = {
+  name: string;
+  page_url: string;
+};
 
-export interface Profile {
-  id: number;
+export type Service = {
+  id: string;
+  service: string;
+  page_link: string;
+  image_url: string;
+  description: string;
+};
+
+export type CoreValue = {
+  id: string;
+  value: string;
+  description: string;
+};
+
+export type Profile = {
   name: string;
   role: string;
   image_url: string;
-}
-
-export interface CoreValue {
-  id: number;
-  value: string;
-  description: string;
-}
-
-export interface Data {
-  services: Service[];
-  profiles: Profile[];
-  corevalues: CoreValue[];
-}
+};

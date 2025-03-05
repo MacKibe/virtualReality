@@ -7,36 +7,16 @@ import AboutUsPage from "../Pages/AboutUsPage";
 import ServicesPage from "../Pages/ServicesPage";
 import ContactPage from "../Pages/ContactPage";
 import Footer from "./Footer";
+import { Page, Service, CoreValue, Profile } from "../types";
 
-// Define types for your data
-interface Service {
-  id: number;
-  service: string;
-  description: string;
-  image_url: string;
-  page_link: string;
-}
+type Data = {
+  pages?: Page[];
+  services?: Service[];
+  corevalues?: CoreValue[];
+  profiles?: Profile[];
+}[];
 
-interface Profile {
-  id: number;
-  name: string;
-  role: string;
-  image_url: string;
-}
-
-interface CoreValue {
-  id: number;
-  value: string;
-  description: string;
-}
-
-interface Data {
-  services: Service[];
-  profiles: Profile[];
-  corevalues: CoreValue[];
-}
-
-const fetchData = async (): Promise<Data[]> => {
+const fetchData = async (): Promise<Data> => {
   const response = await fetch("./data/data.json");
   if (!response.ok) {
     throw new Error("Failed to fetch data");
@@ -44,7 +24,7 @@ const fetchData = async (): Promise<Data[]> => {
   return response.json();
 };
 
-const App = () => {
+const App: React.FC = () => {
   const { data, isLoading, error } = useQuery({
     queryKey: ["data"],
     queryFn: fetchData,
