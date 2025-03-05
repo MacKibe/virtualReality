@@ -13,7 +13,16 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ services }) => {
           <p className="my-4">
             At Virtual Reality Marketing Agency, we specialize in cutting-edge
             digital marketing solutions designed to elevate your brand, increase
-            engagement, and drive measurable results.
+            engagement, and drive measurable results. Whether you’re looking to
+            boost your online presence, generate high-quality leads, or enhance
+            customer retention, our expert team is here to craft tailored
+            strategies that align with your business goals.
+          </p>
+          <p className="my-4">
+            We blend creativity with data-driven insights to deliver campaigns
+            that truly make an impact. From SEO and social media marketing to
+            content creation and paid advertising, we leverage the latest
+            industry trends and technology to maximize your ROI.
           </p>
         </div>
         <ol>

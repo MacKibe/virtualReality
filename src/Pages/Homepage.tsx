@@ -25,7 +25,7 @@ const Homepage: React.FC<HomepageProps> = ({ services, profiles }) => {
         </p>
         <a
           href="#services"
-          className="px-8 py-2 mt-4 border-2 rounded-4xl bg-[var(--primary)] text-[var(--text)]"
+          className="px-8 py-2 mt-8 border-2 rounded-4xl bg-[var(--primary)] text-[var(--text)]"
         >
           Contact Us
         </a>
