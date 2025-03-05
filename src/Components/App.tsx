@@ -8,6 +8,7 @@ import ServicesPage from "../Pages/ServicesPage";
 import ContactPage from "../Pages/ContactPage";
 import Footer from "./Footer";
 import { Page, Service, CoreValue, Profile } from "../types";
+import { Analytics } from '@vercel/analytics/react';
 
 type Data = {
   pages?: Page[];
@@ -39,6 +40,7 @@ const App: React.FC = () => {
 
   return (
     <div className="font-serif text-[var(--background)] bg-[var(--text)]">
+      <Analytics/>
       <Header />
       <Nav />
       <Routes>
