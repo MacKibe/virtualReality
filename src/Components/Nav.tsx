@@ -7,13 +7,15 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const toggleMenu = () => {
+    // Ensures the state is toggled correctly.
     setIsOpen((prev) => !prev);
   };
 
   return (
     <header className="bg-[var(--primary)] text-[var(--text)] sticky top-0 z-50 shadow-md">
-      <div className="flex justify-between items-center text-3xl py-[5%] px-[10%] md:text-xl md:py-[1.5%]">
-        <p className="font-bold">VR Marketing Agency</p>
+      <div className="flex justify-between items-center text-xl py-[5%] px-[10%] md:text-xl md:py-[1.5%]">
+        <p className="hidden md:block font-bold">VR Marketing Agency</p>
+        <p className="md:hidden font-bold">VR Agency</p>
 
         {/* Desktop Navbar */}
         <nav className="hidden md:flex gap-6">

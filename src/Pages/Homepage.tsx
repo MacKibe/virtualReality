@@ -11,7 +11,7 @@ interface HomepageProps {
 
 const Homepage: React.FC<HomepageProps> = ({ services, profiles }) => {
   return (
-    <div className="text-2xl">
+    <div>
       <Hero />
       <OurServices services={services} />
       <div className="text-7xl text-center my-[5%] p-[5%] text-[var(--primary)] bg-[var(--background)]">
