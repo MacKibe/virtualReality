@@ -1,7 +1,7 @@
 const ContactPage = () => {
   return (
     <div>
-      <div id="contact-page" className="px-[15%] py-5">
+      <div id="contact-page" className="md:px-[15%] py-5">
         <section>
           <h2 className="text-center my-[2%]">
             Get in touch
