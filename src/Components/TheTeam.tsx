@@ -5,16 +5,16 @@ interface TeamProps {
 }
 const TheTeam: React.FC<TeamProps> = ({ profiles }) => {
   return (
-    <div>
-      <div className="px-[10%]">
-        <h2 className="text-5xl text-[var(--primary)]">Meet The Team</h2>
-        <p className="my-4">
+    <div className="pb-8">
+      <div className="div-p">
+        <h2>Meet The Team</h2>
+        <p>
           At Virtual Reality Circle, we believe that digital marketing is more
           than just algorithms and analytics—it’s about creating meaningful
           connections. Our team is a powerhouse of creativity and expertise,
           blending data-driven insights with bold ideas to drive real impact.
         </p>
-        <p className="my-4">
+        <p>
           From brand storytelling to performance marketing, we push boundaries
           to deliver strategies that don’t just attract audiences but turn them
           into loyal customers. Meet the team shaping the future of digital

@@ -3,7 +3,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col md:flex-row justify-evenly h-[90dvh] items-center text-center md:text-right md:justify-center md:text-2xl px-[5%]">
       <div className="md:w-[50%] my-[5%]">
-        <h2>Welcome To Virtual Reality Marketing Agency</h2>
+        <h3>Welcome To Virtual Reality Marketing Agency</h3>
         <h1 className="text-5xl md:text-7xl text-[var(--primary)]">
           Transform Your Reality
         </h1>

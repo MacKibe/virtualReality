@@ -14,18 +14,17 @@ const Homepage: React.FC<HomepageProps> = ({ services, profiles }) => {
     <div>
       <Hero />
       <OurServices services={services} />
-      <div className="text-7xl text-center my-[5%] p-[5%] text-[var(--primary)] bg-[var(--background)]">
-        <p>We Don’t Just Boost Traffic—We Drive Success</p>
-      </div>
+      <h2 className="text-center my-[5%] p-[5%] text-[var(--primary)] bg-[var(--background)]">
+        We Don’t Just Boost Traffic—We Drive Success
+      </h2>
       <TheTeam profiles={profiles} />
-      <div className="my-[5%] px-[10%] md:px-[25%] py-[3%] text-center text-wrap text-[var(--primary)] bg-[var(--background)]">
-        <p>
-          Looking for an experienced digital consultant? Schedule an online
-          consultation or training package.
-        </p>
+      <div className="flex flex-col md:flex-row px-[5%] md:px-[10%] py-[10%] md:py-[2%] items-center text-center text-wrap text-[var(--primary)] bg-[var(--background)]">
+        <h2>
+          Schedule an online consultation or training package.
+        </h2>
         <a
           href="#services"
-          className="px-8 py-2 mt-8 border-2 rounded-4xl bg-[var(--primary)] text-[var(--text)]"
+          className="w-[60%] md:w-[20%] mx-auto my-8 py-4 border-2 rounded-4xl bg-[var(--primary)] text-[var(--text)]"
         >
           Contact Us
         </a>

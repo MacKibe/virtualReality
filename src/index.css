@@ -6,3 +6,15 @@
   --background: #181818;
   --text: #f0f0f0;
 }
+
+h2 {
+  @apply text-3xl font-bold text-[var(--primary)];
+}
+
+p{
+  @apply my-4;
+}
+
+.div-p {
+  @apply px-[10%];
+}
