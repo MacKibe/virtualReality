@@ -3,8 +3,8 @@ const ContactPage = () => {
     <div>
       <div id="contact-page" className="px-[15%] py-5">
         <section>
-          <h2 className="text-3xl text-center my-[2%]">
-            Get in <b className="text-[var(--secondary)]">touch</b>
+          <h2 className="text-center my-[2%]">
+            Get in touch
           </h2>
         </section>
         <section className="flex flex-col-reverse gap-[5%] md:flex-row">
@@ -12,37 +12,36 @@ const ContactPage = () => {
             <div className="p-[5%] md:p-2 text-3xl">Fill in the form</div>
             <div className="">
               <input
-                className="border-2 rounded-xl m-2 p-4"
+                className="input-text"
                 type="text"
                 placeholder="First Name"
               />
               <input
-                className="border-2 rounded-xl m-2 p-4"
+                className="input-text"
                 type="text"
                 placeholder="Last Name"
               />
             </div>
             <div>
               <input
-                className="border-2 rounded-xl m-2 p-4"
+                className="input-text"
                 type="text"
                 placeholder="Enter Subject"
               />
               <input
-                className="border-2 rounded-xl m-2 p-4"
+                className="input-text"
                 type="number"
                 placeholder="Phone Number"
               />
             </div>
             <input
-              className="border-2 rounded-xl m-2 p-4"
+              className="input-text"
               type="text"
               placeholder="Email"
             />
             <textarea
-              className="border-2 rounded-xl m-2 p-4"
-              name=""
-              id=""
+              className="input-text"
+              name="message-box"
               placeholder="Enter Message"
             ></textarea>
             <button className="bg-[var(--secondary)] text-[var(--text)] rounded-3xl p-[5%] m-2">

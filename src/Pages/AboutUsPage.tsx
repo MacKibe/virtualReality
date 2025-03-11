@@ -27,8 +27,8 @@ const AboutUsPage: React.FC<AboutPageProps> = ({ coreValues }) => {
         </div>
       </div>
       <div className="p-8 w-[75%] mx-auto bg-white">
-        <h2 className="text-[var(--primary)] text-3xl underline">About Us</h2>
-        <p className="my-4">
+        <h2>About Us</h2>
+        <p>
           <b className="text-[var(--primary)]">Virtual Reality Marketing Agency</b> is
           a pioneering digital marketing agency that integrates immersive
           Virtual Reality (VR) experiences with traditional marketing methods.
