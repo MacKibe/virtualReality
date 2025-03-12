@@ -10,36 +10,36 @@ const ContactPage = () => {
         <section className="flex flex-col-reverse gap-[5%] md:flex-row">
           <form className="flex flex-1 flex-col text-[var(--secondary)]">
             <div className="p-[5%] md:p-2 text-3xl">Fill in the form</div>
-            <div className="">
-              <input
+            <div>
+              <input required
                 className="input-text"
                 type="text"
                 placeholder="First Name"
               />
-              <input
+              <input required
                 className="input-text"
                 type="text"
                 placeholder="Last Name"
               />
             </div>
             <div>
-              <input
+              <input required
                 className="input-text"
                 type="text"
                 placeholder="Enter Subject"
               />
-              <input
+              <input required
                 className="input-text"
                 type="number"
                 placeholder="Phone Number"
               />
             </div>
-            <input
+            <input required
               className="input-text"
               type="text"
               placeholder="Email"
             />
-            <textarea
+            <textarea required
               className="input-text"
               name="message-box"
               placeholder="Enter Message"
