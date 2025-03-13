@@ -1,52 +1,92 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 const ContactPage = () => {
+  const form = useRef<HTMLFormElement | null>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_PUBLIC_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_PUBLIC_KEY,
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <div>
       <div id="contact-page" className="md:px-[15%] py-5">
         <section>
-          <h2 className="text-center my-[2%]">
-            Get in touch
-          </h2>
+          <h2 className="text-center my-[2%]">Get in touch</h2>
         </section>
         <section className="flex flex-col-reverse gap-[5%] md:flex-row">
-          <form className="flex flex-1 flex-col text-[var(--secondary)]">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="flex flex-1 flex-col text-[var(--secondary)]"
+          >
             <div className="p-[5%] md:p-2 text-3xl">Fill in the form</div>
             <div>
-              <input required
+              <input
+                required
+                name="firstName"
                 className="input-text"
                 type="text"
                 placeholder="First Name"
               />
-              <input required
+              <input
+                required
+                name="lastName"
                 className="input-text"
                 type="text"
                 placeholder="Last Name"
               />
             </div>
             <div>
-              <input required
+              <input
+                required
+                name="emailSubject"
                 className="input-text"
                 type="text"
                 placeholder="Enter Subject"
               />
-              <input required
+              <input
+                required
+                name="phoneNumber"
                 className="input-text"
                 type="number"
                 placeholder="Phone Number"
               />
             </div>
-            <input required
+            <input
+              required
+              name="email"
               className="input-text"
               type="text"
               placeholder="Email"
             />
-            <textarea required
+            <textarea
+              required
+              name="emailMessage"
               className="input-text"
-              name="message-box"
               placeholder="Enter Message"
             ></textarea>
-            <button className="bg-[var(--secondary)] text-[var(--text)] rounded-3xl p-[5%] m-2">
-              Send
-            </button>
+            <input
+              type="submit"
+              value="Send"
+              className="bg-[var(--secondary)] text-[var(--text)] rounded-3xl p-[5%] m-2"
+            />
           </form>
           <div className="flex flex-col gap-[5%] flex-1 px-[5%]">
             <div className="flex flex-col md:flex-row text-2xl md:text-sm justify-between">
